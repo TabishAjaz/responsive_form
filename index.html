@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html" style="color: blue;">1.Information&ensp; &ensp;</a></li>
+            <li><a href="delivery.html">2.Delivery&ensp; &ensp;</a></li>
+            <li><a href="payment.html">3.Payment&ensp; &ensp;</a></li>
+            <li><a href="confirmation.html">4.Confirmation&ensp; &ensp;</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div id="lBox" class="box">
+                <h4 id="dTag">Your Details</h4>
+                <form onsubmit=" return validation()" action="delivery.html" method="POST">
+                    <div class="labelDiv">
+                        <div class="" style="display: inline-block;">
+                            <label id="l1" for="fname">First name </label>
+                            <input type="text" class="input" id="fname" style="display: block;">
+                            <span id="textArea1" class="textArea"></span>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label id="l2" for="lname">Last name</label>
+                            <input type="text" class="input" id="lname" style="display: block;"><span id="textArea2" class="textArea"></span></div>
+                    </div>
+
+
+                    <div class="labelDiv">
+                        <div style="display: inline-block;">
+                            <label id="l5" for="mobile">Phone Number</label>
+                            <input type="text" class="input" id="mobile" style="display: block;"><span id="textArea3" class="textArea"></span></div>
+                        <div style="display: inline-block;">
+                            <label id="l6" for="email">Email</label>
+                            <input type="text" class="input" id="email" style="display: block;"><span id="textArea4" class="textArea"></span></div>
+                    </div>
+
+                    <div class="labelDiv">
+                        <div style="display: inline-block;">
+                            <label id="l7" for="add1">Address1</label>
+                            <input type="text" class="input" id="add1" style="display: block;"><span id="textArea5" class="textArea"></span></div>
+                        <div style="display: inline-block;">
+                            <label id="l8" for="add2">Address2</label>
+                            <input type="text" class="input" id="add2" style="display: block;"><span id="textArea6" class="textArea"></span></div>
+                    </div>
+
+                    <div class="labelDiv">
+                        <div style="display: inline-block;">
+                            <label id="l9" for="zip">Zip code</label>
+                            <input type="text" class="input" id="zip" style="display: block;"><span id="textArea7" class="textArea"></span></div>
+                        <div style="display: inline-block;">
+                            <label id="l10" for="city">City </label>
+                            <input type="text" class="input" id="city" style="display: block;"><span id="textArea8" class="textArea"></span></div>
+                    </div>
+
+                    <div class="labelDiv">
+                        <div style="display: inline-block;">
+                            <label id="l11" for="country"> Country</label>
+                            <select name="Country" type="text" class="selectItems" id="country" placeholder="Select Country">
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="srilanka">Srilanka</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="China">China</option>
+                </select><span id="textArea9"></span></div>
+                        <div style="display: inline-block;">
+                            <label id="l12" for="state">State</label>
+                            <select name="State" type="" class="selectItems" id="state" placeholder="Select state">
+                    <option value="">Karnataka</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Bihar">Bihar </option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Jharkhand">JharKhand</option>
+                </select><span id="textArea10"></span></div>
+                    </div>
+                    <input type="checkbox" id="ck1"><span class="links" style="color: black; ">my billing address is same as delivery address</span>
+                    <br><br><br>
+
+                    <a href="#" style="text-decoration:underline" class="links">back to cart</a> <input type="submit" value="Continue to delivery" id="btn1" style="color: aliceblue;"><br><br><br>
+                </form>
+            </div>
+            <div id="rBox" class="box">
+                <span> <h3 style="padding: 5px;">Your Cart <a href="index.html" style="float: right; padding:5px; text-decoration:underline" class="links">Edit</a></h3></span>
+                <table>
+                    <tr>
+                        <th rowspan="" id="image"></th>
+                        <th colspan="2" id="gname">&nbsp;Mens Casio G-Steel <br> &nbsp;&nbsp;GST-W100G-1BER
+                        </th>
+
+                        <th>$3749.00</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" rowspan="1"> Subtotal</td>
+                        <td>$3749.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"> Shipping</td>
+                        <td>Calculated at next step</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"> Taxes (estimated)</td>
+                        <td>$187.45</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"> Tokens</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"> Total</td>
+                        <td>
+                            <h1 id="total">$3936.45</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><i class="fas fa-truck" style="padding: 10px;"></i></td>
+                        <td colspan="3" rowspan="1">
+                            <h4 style="padding: 0px; margin:0px;">Delivery</h4>
+                            Track the progress of your order in real time</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-redo"></i></td>
+                        <td colspan="3" rowspan="1">
+                            <h4 style="padding: 0px; margin:0px;">Return</h4>14 Days money-back returns if you change your mind</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1">
+                            <a href="#faq" style="text-decoration: underline;" class="links">Help & FAQs</a> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer class="foot">
+        <div class="foot1">
+            <p>&copy; 2020 All rights reserved</p>
+        </div>
+        <div class="foot2">
+            <div class="foot21">
+                <div class="cookies">
+                    <a class="dx123" href="">Privacy & Cookies</a>
+                </div>
+                <div class="tandc">
+                    <a class="dx123" href="">Terms & Conditions</a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="code.js"></script>
+
+</html>

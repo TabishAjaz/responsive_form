@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">1.Information&ensp; &ensp;</a></li>
+            <li><a href="delivery.html">2.Delivery&ensp; &ensp;</a></li>
+            <li><a href="payment.html" style="color: blue;">3.Payment&ensp; &ensp;</a></li>
+            <li><a href="confirmation.html">4.Confirmation&ensp; &ensp;</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div id="lBox" class="box">
+                <h1>Payment Method</h1>
+                <h5>Currently you have 10 tokens. You can buy tokens <a href="#index.html">here</a></h5>
+                <form action="confirmation.html">
+
+                    <p>Please select your payment method:</p>
+                    <input type="checkbox" id="paypal" checked>
+                    <label class="radioText" for="paypal" style="font-size: 25px;">Paypal</label>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue with Paypal</div><br><br>
+                    <input type="checkbox" id="tokens">
+                    <label class="radioText" for="tokens" style="font-size: 25px;">Tokens</label>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay using tokens</div><br><br>
+                    <input type="checkbox" id="bankTransfer">
+                    <label class="radioText" for="bankTransfer" style="font-size: 25px;">Bank Transfer</label>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay using Bank</div>
+                    <br>
+                    <br>
+                    <input class="button" type="submit" value="Continue to pay">
+                </form>
+            </div>
+            <div id="rBox" class="box">
+                <span> <h3 style="padding: 5px;">Your Cart <a href="index.html" style="float: right; font-size:small; padding:5px; text-decoration:underline">Edit</a></h3></span>
+                <table>
+                    <tr>
+                        <th rowspan="" id="image"></th>
+                        <th id="gname">&nbsp;Mens Casio G-Steel <br> &nbsp;&nbsp;GST-W100G-1BER
+                        </th>
+
+                        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$3749.00</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" rowspan="1"> Subtotal</td>
+                        <td>$3749.00</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" rowspan="1"> Taxes (estimated)</td>
+                        <td>$187.45</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1"> Tokens</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1"> Total</td>
+                        <td>
+                            <h1>$3936.45</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><i class="fas fa-truck" style="padding: 10px;"></i></td>
+                        <td colspan="3" rowspan="1">
+                            <h4 style="padding: 0px; margin:0px;">Delivery</h4>
+                            Track the progress of your order in real time</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-redo"></i></td>
+                        <td colspan="3" rowspan="1">
+                            <h4 style="padding: 0px; margin:0px;">Return</h4>14 Days money-back returns if you change your mind</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="1">
+                            <a href="#faq" style="text-decoration: underline;">Help & FAQs</a> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer class="foot">
+        <div class="foot1">
+            <p>&copy; 2020 All rights reserved</p>
+        </div>
+        <div class="foot2">
+            <div class="foot21">
+                <div class="cookies">
+                    <a class="dx123" href="">Privacy & Cookies</a>
+                </div>
+                <div class="tandc">
+                    <a class="dx123" href="">Terms & Conditions</a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                    <a class="dx123" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="code.js"></script>
+
+</html>

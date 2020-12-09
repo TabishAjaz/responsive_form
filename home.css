@@ -1,0 +1,239 @@
+  * {
+      box-sizing: border-box;
+  }
+  
+  .container {
+      display: flex;
+      background-color: white;
+      height: auto;
+      width: 80%;
+      font-family: 'Castoro', serif;
+      padding: 0px 30px 10px 30px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: auto;
+  }
+  
+  .labelDiv input,
+  select {
+      margin: 0px 20px;
+      height: 2.53em;
+  }
+  
+  .labelDiv label {
+      margin: 20px;
+      font-family: 'Castoro', serif;
+  }
+  
+  .labelDiv {
+      padding: 10px 10px;
+  }
+  
+  .box {
+      margin-top: 0px;
+      border: 2px solid white;
+  }
+  
+  select {
+      padding: 3px;
+  }
+  
+  label {
+      font-size: medium;
+  }
+  
+  #lBox {
+      background-color: white;
+      width: 60vw;
+      justify-content: flex-start;
+  }
+  
+  li {
+      display: inline-block;
+      font-size: medium;
+      text-decoration: none;
+      color: #f3f3f370;
+      ;
+      font-weight: bold;
+  }
+  
+  #image {
+      background-image: url("https://cdn1.ethoswatches.com/pub/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/c/a/casio-g-shock-gst-s300gl-1adr-large.jpg");
+      width: 80px;
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+      margin-top: 10px;
+  }
+  
+  #rBox {
+      background-color: #f3f3f370;
+      width: 60vw;
+  }
+  
+  th {
+      text-align: left;
+      column-span: 3;
+  }
+  
+  .links {
+      font-size: small;
+  }
+  
+  table {
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+  
+  td {
+      padding: 10px;
+  }
+  
+  .selectItems {
+      width: 170px;
+      display: block;
+  }
+  
+  #btn1,
+  .button {
+      position: relative;
+      left: 30%;
+      background-color: rgb(44, 99, 250);
+      width: 140px;
+      border: blue;
+      height: 25px;
+  }
+  /*------------------------*/
+  
+  .foot {
+      padding: 2rem 0;
+      display: flex;
+  }
+  
+  .foot .foot1 {
+      flex: 55%;
+  }
+  
+  .foot .foot2 {
+      flex: 49%;
+  }
+  
+  .foot21 {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  p {
+      font-size: small;
+  }
+  
+  .radioText {
+      font-size: medium;
+      margin-top: 20px;
+      margin-left: 2px;
+      padding: 10px 0px 10px 0px;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  .textArea {
+      color: red;
+      font-size: small;
+  }
+  /*-------------------------------------------------------------*/
+  
+  @media (max-width:900px) {
+      body {
+          padding: 1rem;
+      }
+      .container {
+          flex-wrap: wrap;
+          margin-left: 0px;
+          width: auto;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding-left: 0%;
+      }
+      #lBox {
+          width: auto;
+          margin-left: 1%;
+          margin-right: 1%;
+      }
+      #rBox {
+          box-sizing: border-box;
+          margin-left: 0%;
+          margin-right: 0%;
+          width: 100%;
+          align-self: center;
+      }
+      .labelDiv input {
+          width: 80vw;
+          height: 2em;
+          border: 1px solid rgb(68, 65, 65);
+          justify-content: flex-start;
+          margin-left: 0%;
+      }
+      .labelDiv label {
+          font-weight: bold;
+          margin-left: 0%;
+      }
+      .container {
+          margin-left: 1%;
+          padding-left: 0%;
+          padding-right: 0%;
+          margin-right: 0%;
+      }
+      .selectItems {
+          width: 80vw;
+          height: 2em;
+          text-align: center;
+          margin-left: 0%;
+      }
+      #ck1 {
+          align-items: flex-start;
+      }
+      #btn1 {
+          width: 80vw;
+          height: 2em;
+          position: relative;
+          left: 5%;
+      }
+  }
+  
+  @media (max-width:350px) {
+      #rBox {
+          display: block;
+          width: 800px;
+      }
+  }
+  
+  @media(min-width:2000px) {
+      #lBox input,
+      label,
+      .selectItems {
+          font-size: 2.5em;
+      }
+      .selectItems {
+          width: 12.3em;
+      }
+      #btn1 {
+          width: 12em;
+          height: 3em;
+      }
+      header li {
+          font-size: 3em;
+      }
+      #rBox,
+      #dTag {
+          font-size: 2.5em;
+      }
+      .links {
+          font-size: 1.1em;
+      }
+      #ckText {
+          font-size: large;
+      }
+  }
